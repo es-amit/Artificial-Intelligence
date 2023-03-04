@@ -78,7 +78,68 @@ An agent can be anything that percieve its enviornment through sensors and acts 
 - **Human agents** has sensory organs such as eyes, ears, nose, tongue and skin for sensing, and other organs like hands, legs mouth are actuators.
 - **Robotic agents** replaces sense organs by cameras and infrared range for sensing, and other actuators like motors are actuators.
 - **Software agents** has encoded bit strings as its programs and actions like keys strokes is a sensor and display unit is an actutator.
+---
+1. Sensors- It is a device which detects the change in the enviornment and sends the information to other electronic device. An agent observes the enviornment through sensors.
+2. Actuators- It is a component of machine that converts energy into motion.
+3. Effectors- It is a device which affects the enviornment. It can be legs, wheels, arms, finger and display screen.
+
+**E.g.-** Lets take an example of self driving car which has agent car and enviornment is road and other cars.
+
+## Types of AI agents:
+Agents can be grouped into five classes based on their degree of percieved intelligence and capacity.
+- Simple reflex agent
+- Model based reflex agent
+- goal based agent
+- Utility based agent
+- Learning agent
+
+### 1. Simple reflex agent: 
+  - The Simple reflex agents are the simplest agents. These agents take decisions on the basis of the current percepts and ignore the rest of the percept history.
+  - These agents only succeed in the fully observable environment.
+  - The Simple reflex agent does not consider any part of percepts history during their decision and action process.
+  - The Simple reflex agent works on Condition-action rule, which means it maps the current state to action. Such as a Room Cleaner agent, it works only if there is dirt in the room.
+
+### \# Problems for the simple reflex agent design approach:
+  - They have very limited intelligence
+  - They do not have knowledge of non-perceptual parts of the current state
+  - Mostly too big to generate and to store.
+  - Not adaptive to changes in the environment.
+
+![image](https://user-images.githubusercontent.com/101783688/222877072-2e529f43-4831-4130-a202-670400924b2c.png)
 
 
 
 
+### 2. Model based reflex agents: 
+  - The Model-based agent can work in a partially observable environment, and track the situation.
+  - A model-based agent has two important factors:
+    - Model: It is knowledge about "how things happen in the world," so it is called a Model-based agent.
+    - Internal State: It is a representation of the current state based on percept history.
+  - These agents have the model, "which is knowledge of the world" and based on the model they perform actions
+![image](https://user-images.githubusercontent.com/101783688/222877177-ae3cae99-02f6-4beb-9b00-4053cfde5722.png)
+
+### 3. Goal based agents: 
+  - The knowledge of the current state environment is not always sufficient to decide for an agent to what to do
+  - The agent needs to know its goal which describes desirable situations.
+  - Goal-based agents expand the capabilities of the model-based agent by having the "goal" information.
+  - They choose an action, so that they can achieve the goal.
+  
+  ![image](https://user-images.githubusercontent.com/101783688/222877224-42b22c42-75be-430b-81d8-0912c09906b5.png)
+
+### 4. Utility based agents: 
+  - The knowledge of the current state environment is not always sufficient to decide for an agent to what to doThese agents are similar to the goal-based agent but provide an extra component of utility measurement which makes them different by providing a measure of success at a given state.
+  - Utility-based agent act based not only goals but also the best way to achieve the goal.
+  - The Utility-based agent is useful when there are multiple possible alternatives, and an agent has to choose in order to perform the best action.
+  - The utility function maps each state to a real number to check how efficiently each action achieves the goals.
+  ![image](https://user-images.githubusercontent.com/101783688/222877261-2a271513-8d5c-461d-af8e-3074d3dd77c4.png)
+
+### 5. Learning agents: 
+  - A learning agent in AI is the type of agent which can learn from its past experiences, or it has learning capabilities
+  - It starts to act with basic knowledge and then able to act and adapt automatically through learning.
+  - A learning agent has mainly four conceptual components, which are:
+      - Learning element: It is responsible for making improvements by learning from environment
+      - Critic: Learning element takes feedback from critic which describes that how well the agent is doing with respect to a            fixed performance standard.
+      - Performance element: It is responsible for selecting external action
+      - Problem generator: This component is responsible for suggesting actions that will lead to new and informative                   experiences.
+  - Hence, learning agents are able to learn, analyze performance, and look for new ways to improve the performance.
+![image](https://user-images.githubusercontent.com/101783688/222877333-9a46e60e-eb15-4e85-bf62-0ba55e0bce74.png)
