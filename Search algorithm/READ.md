@@ -27,3 +27,31 @@ Following are the four essential properties of search algorithms to compare the 
 
 - **Space Complexity:** It is the maximum storage space required at any point during the search, as the complexity of the problem.
 
+## Types of Search algorithms:
+Based on the search problems we can classify the search algorithms into uninformed (Blind search) search and informed search (Heuristic search) algorithms.
+
+![image](https://user-images.githubusercontent.com/101783688/222880477-381446e6-78b1-463e-a62d-2430d8c8356d.png)
+
+### Uninformed or Blind search:
+The uninformed search does not contain any domain knowledge such as closeness, the location of the goal. It operates in a brute-force way as it only includes information about how to traverse the tree and how to identify leaf and goal nodes. Uninformed search applies a way in which search tree is searched without any information about the search space like initial state operators and test for the goal, so it is also called blind search.It examines each node of the tree until it achieves the goal node.
+
+It can be divided into five main types:
+- Breadth-first search
+- Uniform cost search
+- Depth-first search
+- Iterative deepening depth-first search
+- Bidirectional Search
+
+### Heuristic or Informed Search
+Informed search algorithms use domain knowledge. In an informed search, problem information is available which can guide the search. Informed search strategies can find a solution more efficiently than an uninformed search strategy. Informed search is also called a Heuristic search.
+
+A heuristic is a way which might not always be guaranteed for best solutions but guaranteed to find a good solution in reasonable time.
+
+Informed search can solve much complex problem which could not be solved in another way.
+
+An example of informed search algorithms is 
+- Traveling salesman problem.
+- Best First Search
+- A* Search
+- AO* Search
+- Hill climbing
