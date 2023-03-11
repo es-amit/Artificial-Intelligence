@@ -26,22 +26,39 @@ The greedy best first algorithm is implemented by the priority queue.
 
 
 ## Pseudo code
-Best-First-Search(Graph g, Node start)
+
+    Best-First-Search(Graph g, Node start)
+
     1) Create an empty PriorityQueue
+    
        PriorityQueue pq;
+       
     2) Insert "start" in pq.
+    
        pq.insert(start)
+       
     3) Until PriorityQueue is empty
+    
           u = PriorityQueue.DeleteMin
+          
           If u is the goal
+          
              Exit
+             
           Else
+          
              Foreach neighbor v of u
+             
                 If v "Unvisited"
-                    Mark v "Visited"                    
+                
+                    Mark v "Visited" 
+                    
                     pq.insert(v)
-             Mark u "Examined"                    
-End procedure
+                    
+             Mark u "Examined"
+             
+     End procedure
+
 
 ## Example:
 Consider the below search problem, and we will traverse it using greedy best-first search. At each iteration, each node is expanded using evaluation function f(n)=h(n) , which is given in the below table.
@@ -51,13 +68,17 @@ Consider the below search problem, and we will traverse it using greedy best-fir
 
 In this search example, we are using two lists which are OPEN and CLOSED Lists. Following are the iteration for traversing the above example.
 
-#### Time Complexity: The worst case time complexity of Greedy best first search is O(bm).
+#### Time Complexity: 
+The worst case time complexity of Greedy best first search is O(b<sup>m</sup>).
 
 
-#### Space Complexity: The worst case space complexity of Greedy best first search is O(bm). Where, m is the maximum depth of the search space.
+#### Space Complexity: 
+The worst case space complexity of Greedy best first search is O(b<sup>d</sup>). Where, m is the maximum depth of the search space.
 
 
-#### Complete: Greedy best-first search is also incomplete, even if the given state space is finite.
+#### Complete: 
+Greedy best-first search is also incomplete, even if the given state space is finite.
 
 
-#### Optimal: Greedy best first search algorithm is not optimal.
+#### Optimal: 
+Greedy best first search algorithm is not optimal.
