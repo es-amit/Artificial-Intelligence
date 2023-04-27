@@ -1,7 +1,7 @@
 # Depth First Search
 - The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking. 
 So the basic idea is to start from the root or any arbitrary node and mark the node and move to the adjacent unmarked node and continue this loop until there is no unmarked adjacent node. Then backtrack and check for other unmarked nodes and traverse them. Finally, print the nodes in the path.
-- Breadth-first search implemented using stack(recursion) data structure.
+- depth-first search implemented using stack(recursion) data structure.
 
 ### Algorithm
 1.  Create a recursive function that takes the index of the node and a visited array.
